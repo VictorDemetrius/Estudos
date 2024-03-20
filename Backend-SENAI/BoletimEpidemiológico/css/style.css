@@ -1,0 +1,35 @@
+@import "dados_detalhados_suspeitos.css";
+@import "dados_detalhados_confirmados.css";
+@import "dados_gerais.css";
+
+main {
+        display: flex;
+}
+
+.dados__detalhados{
+    width: 60%;
+    height: 500px;
+
+}
+
+.dados__gerais{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 500px;
+
+}
+.dados {
+    width: 90px;
+    height: 90px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img {
+    width: 180px;
+}

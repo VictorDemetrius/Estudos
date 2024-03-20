@@ -1,0 +1,14 @@
+#moviesContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#movie{
+    margin: 10px;
+    width: 300px;
+}
+#img{
+    width: 200px;
+    height: 300px;
+}

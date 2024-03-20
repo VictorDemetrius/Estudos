@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jokenpô</title>
+</head>
+
+<body>
+    <div>
+        <h1>Pedra, Papel e Tesoura</h1>
+        <p>Escolha sua opção</p>
+        
+        <button onclick="jogar(1)">
+            <img src="img/pedra.png" width="350px" height="350px" alt="Pedra">
+        </button>
+        <button onclick="jogar(2)">
+            <img src="img/papel.png" width="350px" height="350px" alt="Papel">
+        </button>
+        <button onclick="jogar(3)">
+            <img src="img/jokenpo-user-tesoura.png" width="350px" height="350px" alt="Tesoura">
+        </button>
+        <p>Escolha do CPU</p>
+        <img id ="imagem" src = "">
+        <p>Resultado</p>
+        <p id="resultado"></p>
+    </div>
+    <script>
+        function jogar(escolhaUsuario) {
+            const escohaCPU = Math.floor(Math.random() * 3) + 1
+            let resultado = ""
+
+            if(escohaCPU == 1)
+            {
+                document.getElementById("imagem").src ="img/pedra.png"
+            }
+            if(escohaCPU == 2)
+            {
+                document.getElementById("imagem").src ="img/papel.png"
+            }
+            if(escohaCPU == 3)
+            {
+                document.getElementById("imagem").src ="img/jokenpo-user-tesoura.png"
+            }
+
+            if (escolhaUsuario == escohaCPU) {
+                resultado = "Empate -_-"
+            }
+            else if (escolhaUsuario == 1 && escohaCPU == 2) {
+                resultado = "Você perdeu T.T"
+            }
+            else if (escolhaUsuario == 1 && escohaCPU == 3) {
+                resultado = "Você  ganhou *__*"
+            }
+            else if (escolhaUsuario == 2 && escohaCPU == 1) {
+                resultado = "Você ganhou *__*"
+            }
+            else if (escolhaUsuario == 2 && escohaCPU == 3) {
+                resultado = "Você perdeu T.T"
+            }
+            else if (escolhaUsuario == 3 && escohaCPU == 1) {
+                resultado = "Você perdeu T.T"
+            }
+            else if (escolhaUsuario == 3 && escohaCPU == 2) {
+                resultado = "Você ganhou *__*"
+            }
+            document.getElementById("resultado").innerHTML = resultado
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+div{
+    width: 1200px;
+    margin-top: 300px;
+    margin: auto;
+}
+h1{
+    text-shadow: 2px;
+    text-align: center;
+    font-size:80px
+}
+p{
+    font-size: 45px;
+    text-align: center;
+}
+#imagem{
+    margin-left: 400px;
+}
+body{
+    background-color: gainsboro;
+}
