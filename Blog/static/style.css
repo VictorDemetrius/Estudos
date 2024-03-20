@@ -1,0 +1,62 @@
+html{
+    font-family: sans-serif;
+    color:darkgreen;
+    background: silver;
+    padding: 1rem;
+}
+body{
+
+    max-width: 960px;
+    margin: 0 auto;
+    background: white;
+    
+}
+
+h1{
+    font-family: serif;
+    color: black;
+    margin: 1rem;
+}
+hr{
+    border:none;
+    border-top: 1px solid silver;
+
+}
+.content{
+    padding: 0 1rem 1rem;
+}
+.post > header > div:first-of-type{
+
+    flex: auto;
+}
+.post .about{
+
+    color: black;
+    font-style: italic;
+}
+
+.post .body{
+
+    white-space: pre-line;
+}
+.no-post{
+
+    font-style: italic;
+    color:gray 
+}
+
+.content form{
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+}
+
+.content label{
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.content input{
+    margin-bottom: 1em;
+}
